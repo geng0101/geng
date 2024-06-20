@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>我的个人网站</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
+</head>
+
+<body>
+    <!-- 主容器，包含整个页面内容 -->
+<div id="main_container"><!-- 头部区域，包含logo和导航菜单 -->
+    <!-- 页眉区域，使用浮动布局来放置logo和菜单 -->
+    <div id="header">
+        <div id="logo"><!--使用浮动 -->
+            <a href="index.html"><img src="images/logo.png" width="358" height="40" alt="" title=""
+                                                 border="0"/></a>
+             <span style="font-size: 20px; font-weight: bold; color: #141313;">GBL'S Home</span>
+                                                </div>
+
+        <div id="menu"><!--使用浮动 -->
+            <ul><!-- 导航链接列表 -->
+                <li><a class="current" href="index.html" title="">网站首页</a></li>
+                <li><a href="pyq.html" title="">我的朋友圈</a></li>
+                <li><a href="rcsh.html" title="">日常生活</a></li>
+                <li><a href="xqah.html" title="">兴趣爱好</a></li>
+                <li><a href="ly.html" title="">给我留言</a></li>
+                    
+        </div>
+
+    </div>
+
+
+    <div id="middle_box"></div>
+
+    <div id="center_content"><!-- 主体内容区域，使用浮动布局来分隔左右栏 -->
+
+        <div class="left_content">
+            <div class="title_photos">我的照片</div>
+
+            <a href="#"><img src="images/photo1.gif" alt="" title="" border="0" class="photo"/></a>
+            <a href="#"><img src="images/photo2.jpg" alt="" title="" border="0" class="photo"/></a>
+
+            <div class="content l" style="margin-right: 100px;">
+                <div class="title_photos">基本信息</div>
+                <div class="friends_list">
+                    <ul>
+                        <li><a href="#" title="">班级：信管2202班</a></li>
+                        <li><a href="#" title="">学号：202221130134</a></li>
+                        <li><a href="#" title="">姓名：耿彬露</a></li>
+                        <li><a href="#" title="">性别：女</a></li>
+                        <li><a href="#" title="">年龄：20</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content 1">
+                <div class="title_photos">我的技能</div>
+                <div class="friends_list">
+                    <ul>
+                        <li><a href="#" title="">英语四级证书</a></li>
+                        <li><a href="#" title="">熟练掌握C++、Python，Java等计算机语言</a></li>
+                        
+                        <li><a href="#" title="">博文杯等比赛经验</a></li>
+                        <li><a href="#" title="">掌握数据库管理、web前端开发，深度学习等计算机知识</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="right_content">
+            <div class="title_journal">我的特长</div>
+            <div class="news_tab">
+                <h1>&nbsp;</h1>
+                <p> 能运用设计软件如： Photoshop、Visual Studio Code、SQL Server、Pycharm等。<br/>
+                    行政工作方面：熟练操作Office办公软件、善于沟通、学习能力和责任心强,有较强的自我管理能力,能及时完成交办任务,具备独立处理事物能力。</p>
+                <div class="news_details"></div>
+            </div>
+
+            <div class="news_tab">
+                <h1><a href="#"><img src="images/z1.jpg" alt="" width="150" height="200" border="0" class="photo"
+                                     title=""/></a><a href="#"><img src="images/z2.jpg" alt="" width="150" height="200"
+                                                                    border="0" class="photo" title=""/></a></h1>
+                <div class="news_details"></div>
+            </div>
+
+        </div>
+        <div class="clear"></div>
+    </div>
+
+<!-- 页脚区域，使用flex布局实现水平和垂直居中 -->
+<footer id="footer">
+    <div class="copyright">
+            <img src="images/footer_logo.png" alt="" title=""/>
+        </div>
+        <p>版权©归耿彬露所有</p>
+    </footer>
+</div>
+</body>
+</html>

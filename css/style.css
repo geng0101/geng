@@ -1,0 +1,361 @@
+/* 页面基础样式 */
+body {
+    margin: 0px;
+    padding: 0px;
+    font: 12px verdana, arial, helvetica;
+    color: #777c7c;
+}
+/* 链接样式 */
+a {
+    text-decoration: none;
+    color: #777c7c;
+
+}
+/* 段落样式 */
+p {
+    margin: 0px;
+    padding: 0 0 5px 0;
+    line-height: 17px;
+    text-align: justify;
+  }
+  /* 浮动样式 */
+.l {
+    float: left;
+}
+.r {
+    float: right;
+}
+p.about_text {
+    padding: 5px 0 5px 0;
+    font-size: 16px;
+    color: #000000;
+}
+h1 {
+    color: #a0672e;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 5px 0 5px 0;
+}
+/* 当鼠标悬停在ID为main_container的元素上时，添加阴影效果 */
+#main_container:hover {
+    box-shadow: 0 100px 100px rgba(138, 136, 136, 0.1);
+}
+/* 主容器样式，使用相对定位 */
+#main_container {
+    width: 1200px; 
+    height: 150vh; 
+    margin: auto;
+    background-image: url('../images/main_bj.gif'); 
+    background-size: cover; /* 覆盖整个元素 */
+    background-position: center; /* 居中显示 */
+    background-repeat: no-repeat; /* 防止图片平铺 */
+    background-attachment: fixed; /* 背景图片固定 */
+    position: relative; /* 相对定位，以便在背景上覆盖内容 */
+}
+
+/* 调整背景图片的透明度 */
+#main_container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* 确保这个层在内容之后 */
+    pointer-events: none; /* 防止覆盖点击事件 */
+}
+
+/* 确保内容在背景之上 */
+.content {
+    position: relative;
+    z-index: 1;
+}
+#center_content {
+    width: 895px;
+    margin: auto;
+}
+
+#header {
+    width: 895px;
+    height: 130px;
+    margin: auto;
+}
+/* Logo使用浮动布局 */
+#logo {
+    padding: 60px 0 0 0;
+    float: left;
+}
+#logo img {
+    max-width: 20%; /* 最大宽度不超过其父容器的宽度 */
+    height: auto; /* 保持图片宽高比 */
+}
+
+#logo span {
+    position: absolute;
+    top: 90px; 
+    left: 300px; 
+    font-size: 100px;
+    font-weight: bold;
+    color: #333;
+} 
+
+/*----------------------menu-------------------------*/
+/* 导航菜单样式 */
+#menu {
+    width: 460px;
+    height: auto;
+    float: left;/* 使用浮动布局 */
+    padding: 105px 0 0 70px;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    font-weight: bold;
+}
+
+#menu ul li {
+    list-style: none;
+    display: inline;
+    float: left;
+    width: auto;
+    height: 12px;
+    padding: 0px;
+    font-size: 15px;
+}
+
+#menu ul li a {
+    height: 12px;
+    width: auto;
+    float: left;
+    text-decoration: none;
+    padding: 0 8px 0 17px;
+    margin: 0px;
+    color: #314d14;
+    font-weight: bold;
+}
+
+#menu ul li a:hover {
+    height: 12px;
+    width: auto;
+    text-decoration: none;
+    color: #314d14;
+    background: url(../images/menu_checked.gif) no-repeat left;
+}
+
+#menu ul li a.current {
+    height: 12px;
+    width: auto;
+    float: left;
+    text-decoration: none;
+    padding: 0 8px 0 17px;
+    color: #314d14;
+    background: url(../images/menu_checked.gif) no-repeat left;
+}
+
+#middle_box {
+    width: 895px;
+    height: 278px;
+    clear: both;
+    margin: auto;
+    background: url(../images/middle_bg.jpg) no-repeat center;
+    background-size: 895px 278px;
+}
+
+.middle_box_content {
+    width: 370px;
+    padding: 20px 0 0 30px;
+}
+
+.title_journal {
+    height: 26px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 0 0 35px;
+   
+    background: url(../images/icon_journal.gif) no-repeat left;
+    background-position: 0px 0px;
+}
+
+.title_photos {
+    height: 26px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 0 0 35px;
+ 
+    background: url(../images/icon_photo.gif) no-repeat left;
+    background-position: 0px 0px;
+}
+
+.title_friends {
+    height: 26px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 0 0 35px;
+    color: #000000;;
+    background: url(../images/icon_friends.gif) no-repeat left;
+    background-position: 0px 0px;
+}
+
+a.more {
+    display: block;
+    text-decoration: none;
+    float: right;
+    margin: 5px 0 15px 0;
+}
+.l {
+    float: left;
+}
+.r {
+    float: right;
+}
+
+/*---------------------main_content------------------*/
+/* 主体内容区域样式，使用浮动布局分隔左右栏 */
+.left_content {
+    width: 480px;
+    height: auto;
+    float: left;
+    padding: 10px 10px 15px 0;
+}
+
+
+
+.right_content {
+    width: 390px;
+    height: auto;
+    float: left;
+    padding: 10px 0 0 10px;
+}
+
+.news_tab {
+    padding: 10px 0 5px 0;
+    margin: 0px;
+    text-align: justify;
+    line-height: 14px;
+    border-bottom: 1px #b2bbbb dashed;
+}
+
+.news_details {
+    padding: 5px 0 0 0;
+    text-align: right;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+span.date {
+    color:#000000;;
+}
+
+img.photo {
+    padding: 10px;
+}
+img.photo {
+    width: 44%; /* 例如，图片宽度为容器宽度的一半 */
+    height: auto;
+}
+
+.clear {
+    clear: both;
+}
+
+/*----------------------friends_list-------------------------*/
+.friends_list ul {
+    list-style: none;
+    padding: 0px 10px 10px 0px;
+    margin: 0px;
+}
+
+.friends_list ul li {
+    list-style: none;
+    width: auto;
+    height: auto;
+    padding: 0px;
+}
+
+.friends_list ul li a {
+    height: 16px;
+    width: auto;
+    display: block;
+    padding: 0 0 0 20px;
+    margin: 10px;
+    color: #000000;;
+    text-align: left;
+    font-weight: bold;
+    font-size: 11px;
+    background: url(../images/list_checked.gif.png) no-repeat left;
+    background-position: 0px 0px;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+.friends_list ul li a:hover {
+    height: 16px;
+    width: auto;
+    text-decoration: none;
+    color:#000000;
+}
+.happy {
+    padding: 30px;
+
+}
+.happy_box {
+    margin: 30px 0 ;
+}
+.food_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.food_box li {
+    width: 260px;
+}
+.food_box  li img {
+    width: 100%;
+    border: 2px solid white;
+    transition: .5s all;
+    height: 173.61px;
+}
+.food_box  li img:hover {
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+}
+.food_box  li p {
+    font-size: 16px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+
+/*-----------------------------footer------------------*/
+#footer {
+    width: 895px;
+    height: 48px;
+    margin: auto;
+    color: #000000;
+    border-top: 1px #b2bbbb dashed;
+}
+
+.copyright {
+    float: left;
+    padding-left: 15px;
+    padding-top: 7px;
+}
+
+.footer_links {
+    float: right;
+    padding-right: 15px;
+    padding-top: 7px;
+}
+#footer p {
+    font-size: 14px;
+    color: #a1a1a1;
+    text-align: right;
+    line-height: 40px;
+}
+
+
